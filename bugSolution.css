@@ -1,0 +1,19 @@
+/* bug.css */
+.parent {
+  /* Missing width declaration causing the issue */
+}
+
+.child {
+  width: calc(100% - 10px);
+  background-color: lightblue;
+}
+
+/* bugSolution.css */
+.parent {
+  width: 500px; /* Added width declaration */
+}
+
+.child {
+  width: calc(100% - 10px);
+  background-color: lightblue;
+}
